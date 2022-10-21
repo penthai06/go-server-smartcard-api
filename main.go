@@ -30,7 +30,7 @@ func main() {
 	})
 
 	app.Get("/", func(ctx *fiber.Ctx) error {
-		return ctx.Status(503).JSON(fiber.Map{
+		return ctx.Status(200).JSON(fiber.Map{
 			"message": "Hi",
 		})
 	})
